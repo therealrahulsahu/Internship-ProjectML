@@ -1,1 +1,1 @@
-from .prediction_class import _1705157
+from .prediction_class import R_1705157

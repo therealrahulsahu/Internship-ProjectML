@@ -1,17 +1,17 @@
 from flask import Flask, request
-# from PartialPaymentPredictor import _1705157
+# from PartialPaymentPredictor import R_1705157
 import pickle
 import json
 from flask_cors import CORS
 
-app = Flask(__name__)
-cors = CORS(app)
-
-# payment = _1705157()
+# payment = R_1705157()
 # payment.load_data_from_db("project")
 # payment.prepare_dict()
 payment = pickle.load(open("PartialPaymentPredictor/1705157.pkl", 'rb'))
+# pickle.dump(payment, open("PartialPaymentPredictor/1705157.pkl", 'wb'))
 
+app = Flask(__name__)
+cors = CORS(app)
 
 @app.route('/get_prediction_by_pk_id', methods=['POST', 'GET'])
 def get_prediction_by_pk_id():
@@ -27,4 +27,3 @@ def get_prediction_by_pk_id():
 
 if __name__ == '__main__':
     app.run()
-    # pickle.dump(open("PartialPaymentPredictor/1705157.pkl", 'wb'))

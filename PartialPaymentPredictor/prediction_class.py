@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 
 
-class _1705157:
+class R_1705157:
     def __init__(self):
         self.test = pd.DataFrame([])
         self.train = pd.DataFrame([])
@@ -98,6 +98,6 @@ class _1705157:
 
 
 if __name__ == '__main__':
-    pay = PaymentPredictor()
+    pay = R_1705157()
     pay.load_data_from_db("project")
     pay.prepare_dict()
