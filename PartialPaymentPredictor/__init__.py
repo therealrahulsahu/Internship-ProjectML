@@ -1,1 +1,1 @@
-from .prediction_class import PaymentPredictor
+from .prediction_class import _1705157

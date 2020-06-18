@@ -1,11 +1,10 @@
 import mysql.connector as cnn
-import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 
 
-class PaymentPredictor:
+class _1705157:
     def __init__(self):
         self.test = pd.DataFrame([])
         self.train = pd.DataFrame([])
