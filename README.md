@@ -1,4 +1,4 @@
-# HighRadiusProjectML
-ML Support for HighRadius Internship Project
+# Internship ProjectML
+ML Support for Internship Project
 
 Partially payment prediction by ML
